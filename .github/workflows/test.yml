@@ -1,4 +1,5 @@
 name: GitHub Actions Test
+
 on:
   workflow_dispatch:
 
@@ -7,19 +8,14 @@ jobs:
     runs-on: self-hosted
 
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Show Current Directory
-        run: pwd
+      - run: pwd
 
-      - name: List Repository Files
-        run: ls -la
+      - run: dir
 
-      - name: Setup Terraform
-        uses: hashicorp/setup-terraform@v3
+      - uses: hashicorp/setup-terraform@v3
         with:
           terraform_version: 1.14.2
 
-      - name: Check Terraform Version
-        run: terraform version
+      - run: terraform version
