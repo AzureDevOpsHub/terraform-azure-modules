@@ -7,6 +7,10 @@ rgs={
         rg_name  = "rg-prod-002"
         location = "central india"
     }
+     "rg3" = {
+        rg_name  = "rg-uat-003"
+        location = "central india"
+    }
 }
 
 vnets={
