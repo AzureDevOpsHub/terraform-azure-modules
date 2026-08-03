@@ -10,8 +10,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - run: pwd
-
       - run: dir
 
       - uses: hashicorp/setup-terraform@v3
